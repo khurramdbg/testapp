@@ -1,0 +1,32 @@
+$navbar-default-bg: #575757;
+
+
+// Custom bootstrap variables must be set or imported *before bootstrap
+@import "bootstrap";
+
+#logo{
+    font-size:1.5em;
+    color:#eee;
+    font-weight: bold;
+    font-family:  Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#logo:hover{text-decoration: none;}
+ 
+.center{text-align: center;}
+.right{text-align: right;}
+.left{text-align: left;}
+.header{
+    background-image: asset-url('header.jpg');
+    background-size: cover;
+}
+
+.footer{
+    background-color: #575757;    
+    bottom:0px; 
+    border-radius: 8px;
+    border-top: solid 1px black;
+    color:#ababab;
+    width:100%;
+    padding:10px;
+}
+.footer a{color:pink}

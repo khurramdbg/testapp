@@ -29,7 +29,8 @@ gem 'jbuilder', '~> 2.7'
 gem 'bootsnap', '>= 1.4.2', require: false
 
 gem 'jquery-rails'
-gem 'bootstrap-sass', '~>3.3.5' 
+gem 'bootstrap', '~>4.0.0'  
+
 #gem 'sass-rails', '>=3.2'
 
 group :development, :test do
