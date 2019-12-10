@@ -1,14 +1,17 @@
 <h4>Create New Article</h4>
 
-<% if @article.errors.any? %>
-<ul>
-    <% @article.errors.full_messages.each do |msg|%>
-        <li><%= msg %></li>
-    <% end %>
-</ul>
-<% end %> %>
 
-<%= form_for @article do |f|%>
+   <% if @article.errors.any? %>
+   <h3>Following errors prevented the save</h3>
+    <ul>
+        <% @article.errors.full_messages.each do |msg|%>
+            <li><%= msg %></li>
+        <% end %>
+    </ul>
+    <% end %>
+
+<%= form_for @article  do |f| %>
+
     <p>
     <%= f.label :title %> <br/>
     <%= f.text_field :title%>
@@ -25,6 +28,7 @@
     </p>
 
     <p>
-    <%=f.submit :@article.create %>
+    <%=f.submit  %>
+    <%=link_to "back to articles", articles_path%>
     </p>
 <%end%>

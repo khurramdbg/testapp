@@ -53,6 +53,12 @@
       <!-- Post Content Column -->
       <div class="col-lg-8">
 
+
+<ul>
+<%flash.each do |name, msg|%>
+  <li><%=msg%></li>
+<% end %>
+</ul>
         <%= yield %>
 
       </div>

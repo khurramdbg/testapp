@@ -1,12 +1,15 @@
 <h4>Showing Selected Article</h4>
 <p>
-Title: <%@article.title%>
+Title: <%=@article.title%>
 </p>
 
 <p>
-Description: <%@article.description%>
+Description: <%=@article.description%>
 </p>
 
 <p>
-Author: <%@article.author%>
+Author: <%=@article.author%>
 </p>
+
+<%=link_to "Edit", edit_article_path(@article)%> |
+<%=link_to "back to articles", articles_path%>
