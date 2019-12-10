@@ -29,7 +29,8 @@ gem 'jbuilder', '~> 2.7'
 gem 'bootsnap', '>= 1.4.2', require: false
 
 gem 'jquery-rails'
-gem 'bootstrap-sass'
+gem 'bootstrap-sass', '~>3.3.5' 
+#gem 'sass-rails', '>=3.2'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
